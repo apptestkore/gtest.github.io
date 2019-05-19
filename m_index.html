@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projeto Semear</title>
+    <link rel="shortcut icon" href="http://approder.com.br/favicon.ico">
+    <link rel="stylesheet" href="m_index_arquivos/bootstrap_002.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="m_index_arquivos/css.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="m_index_arquivos/bootstrap.css">
+	<link rel="stylesheet" href="m_index_arquivos/style-mobile.css">
+	<link rel="stylesheet" href="m_index_arquivos/framework7.css">
+	<script src="m_index_arquivos/framework7.js"></script><script></script>
+	<script src="m_index_arquivos/jquery.js"></script>
+	<script src="m_index_arquivos/bootstrap.js"></script>
+<style>
+
+.conj_botoes{
+    color: #f9f3f4;
+    position: absolute;
+    text-align: center;
+    top: 9%;
+    left: 0%;
+    width: 100%;
+    line-height: 0.4em;
+    z-index: 9;
+}
+
+dfn {
+  padding: 0 0;
+  cursor: help;
+  font-style: normal;
+  position: relative;
+}
+dfn::after {
+  content: attr(data-info);
+  display: inline;
+  position: absolute;
+  top: 22px; left: -200px;
+  opacity: 0; 
+  width: 230px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5em;
+  padding: 0.5em 0.8em;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  pointer-events: none; /* This prevents the box from apearing when hovered. */
+  transition: opacity 250ms, top 250ms;
+  margin-top: -140px;
+}
+dfn:hover {z-index: 2;} /* Keeps the info boxes on top of other elements */
+dfn:hover::after,
+dfn:hover::before {opacity: 1;}
+dfn:hover::after {top: 30px;}
+dfn:hover::before {top: 20px;}
+</style></head>
+
+
+<body>
+    <div class="nav">
+      <div class="nav-header">
+        <div class="nav-title">
+          Semear
+        </div>
+        <div class="nav-title" style="font-size: 15px;margin-left: -18px;">v1.0</div>
+      </div>
+       <div class="nav-title">
+			<a href="#" data-toggle="modal" data-target="#informacao">
+				<img src="m_index_arquivos/info.svg" alt="Informação" style="margin-top: 16px;margin-left: 22px;" width="20px;">
+			</a>
+			<a href="#" data-toggle="modal" data-target="#doacao">
+				<img src="m_index_arquivos/heart.svg" alt="Doação" style="margin-top: 16px;margin-left: 20px;" width="20px;">
+			</a> 
+       </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <input type="checkbox" id="nav-check">
+      <div class="nav-links" style="position: absolute;left: 80%;">
+      	<a href="#" class="active">Centro</a>
+        <a href="#" class="">Doação</a>
+      </div>
+    </div>
+    <div id="particles-js" class="bg-escuro">
+
+        <div class="conj_botoes">
+        	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			    <div class="carousel-inner">
+            <div class="item">
+              <center>
+                <a href="#" class="btn botao-blackB ml-5" style="margin-left: -4px !important; " data-toggle="modal" data-target="#tentacao">TENTAÇÃO</a>
+              </center>
+              <center>
+                <a href="#" class="btn botao-blackB mx-lg-5" data-toggle="modal" data-target="#lagrimas">LÁGRIMAS</a>
+                <a href="#" class="btn botao-blackB mx-lg-5" data-toggle="modal" data-target="#luto">LUTO</a>
+              </center>
+              <center>
+                <a href="#" class="btn botao-red mx-lg-5" style="border: 3px solid rgba(169, 168, 168, 0.8);box-shadow: #0f1643 0px 0px 12px inset, #aba9a9b0 0px 0px 12px;" data-toggle="modal" data-target="#oracao">ORAÇÃO</a>
+                
+              </center>
+              <center>
+                <a href="#" class="btn botao-red mx-lg-5" style="z-index: 999999;" data-toggle="modal" data-target="#vidaEterna">VIDA ETERNA</a>
+                <a href="#" class="btn botao-red mx-lg-5" style="z-index: 999999;" data-toggle="modal" data-target="#gloria">GLÓRIA</a>
+              </center>
+              <center>
+                <div>            
+                    <h1 style="font-size: 60px;font-family: 'Caveat', cursive;text-shadow: 2px 2px 9px #ffffff;">JESUS</h1>
+                    <a href="#" class="btn botao-black" data-toggle="modal" data-target="#eis-meAqui">EIS-ME AQUI!</a>
+                </div>
+              </center>
+              <center>
+                <a href="#" class="btn botao-red mx-lg-5" style="z-index: 999999;" data-toggle="modal" data-target="#bencao">BENÇÂO</a>
+                <a href="#" class="btn botao-red mx-lg-5" style="z-index: 999999;" data-toggle="modal" data-target="#espiritoSanto">ESPÍRITO SANTO</a>
+              </center>
+              <center>
+                <a href="#" class="btn botao-red mx-lg-5" style="margin-top: -2%;border: 3px solid rgba(169, 168, 168, 0.8);box-shadow: #0f1643 0px 0px 12px inset, #aba9a9b0 0px 0px 12px;" data-toggle="modal" data-target="#jovens">JOVENS</a>
+              </center>
+              <center>
+                <a href="#" class="btn botao-blackB mr-4 mt-2" data-toggle="modal" data-target="#ansiedade">ANSIEDADE</a>
+                <a href="#" class="btn botao-blackB mx-lg-5 mx-1" data-toggle="modal" data-target="#depressao">DEPRESSÃO</a>
+              </center>
+              <center>
+                <a href="#" class="btn botao-blackB mx-lg-5 mx-1" data-toggle="modal" data-target="#medo">MEDO</a>
+              </center>
+            </div>
+
+
+            <div class="item">
+              <center>
+                <a href="#" class="btn botao-red mx-lg-5" data-toggle="modal" data-target="#esperanca">ESPERANÇA</a>
+              </center>
+              <center>
+                <a href="#" class="btn botao-red mx-lg-5" data-toggle="modal" data-target="#cura">CURA</a>
+                <a href="#" class="btn botao-red mx-lg-5" data-toggle="modal" data-target="#fe">FÉ</a>
+              </center>
+              <center>
+                <a href="#" class="btn botao-red mx-lg-5" data-toggle="modal" data-target="#direcao">DIREÇÃO</a>
+              </center>
+              <center>
+                <a href="#" class="btn botao-red mx-lg-5" data-toggle="modal" data-target="#amizade">AMIZADE</a>
+                <a href="#" class="btn botao-red mx-lg-5" data-toggle="modal" data-target="#disciplina">DISCIPLINA</a>
+              </center>
+              <center>
+                <div>            
+                    <h1 style="font-size: 60px;font-family: 'Caveat', cursive;text-shadow: 2px 2px 9px #ffffff;">JESUS</h1>       
+                    <a href="#" class="btn botao-black" data-toggle="modal" data-target="#eis-meAqui">EIS-ME AQUI!</a>
+                </div>
+              </center>
+              <center>
+                <a href="#" class="btn botao-red mx-lg-5" data-toggle="modal" data-target="#exaltacao">EXALTAÇÃO</a>
+                <a href="#" class="btn botao-red mx-lg-5" data-toggle="modal" data-target="#liberdade">LIBERDADE</a>
+              </center>
+              <center>
+                <a href="#" class="btn botao-red mx-lg-5" data-toggle="modal" data-target="#jovens">JOVENS</a>
+              </center>
+              <center>
+                <a href="#" class="btn botao-red mx-lg-5" data-toggle="modal" data-target="#oracao">ORAÇÃO</a>
+                <a href="#" class="btn botao-red mx-lg-5" data-toggle="modal" data-target="#obediencia">OBEDIÊNCIA</a>
+              </center>
+              <center>
+                <a href="#" class="btn botao-red mx-lg-5" data-toggle="modal" data-target="#paz">PAZ</a>
+              </center>
+            </div>
+
+			      <div class="item active">
+			      	<center>
+			        	 <a href="#" class="btn botao-blackB mx-lg-5" data-toggle="modal" data-target="#pensamentos">PENSAMENTOS</a>
+			        </center>
+			        <center>
+			        	<a href="#" class="btn botao-blackB mr-4 mt-2" data-toggle="modal" data-target="#aflicao">AFLIÇÃO</a>
+			        	<a href="#" class="btn botao-blackB mr-4 mt-2" data-toggle="modal" data-target="#decepcao">DECEPÇÃO</a>
+			        </center>
+			        <center>
+			        	<a href="#" class="btn botao-blackB ml-3 mt-2" style="border: 3px solid rgba(169, 168, 168, 0.8);box-shadow: #0f1643 0px 0px 12px inset, #aba9a9b0 0px 0px 12px;" data-toggle="modal" data-target="#ajuda">AJUDA</a>
+			        </center>
+			        <center>
+			        	<a href="#" class="btn mt-2 botao-red" data-toggle="modal" data-target="#felicidade">FELICIDADE</a>
+			          <a href="#" class="btn mt-2 botao-red" data-toggle="modal" data-target="#prosperidade">PROSPERIDADE</a>
+			        </center>
+			        <center>
+			        	<div>            
+				            <h1 style="font-size: 60px;font-family: 'Caveat', cursive;text-shadow: 2px 2px 9px #ffffff;">JESUS</h1>
+				            <a href="#" class="btn botao-black" data-toggle="modal" data-target="#eis-meAqui">EIS-ME AQUI!</a>
+			        	</div>
+			        </center>
+			        <center>
+			        	<a href="#" class="btn botao-red mx-lg-5" style="z-index: 999999;" data-toggle="modal" data-target="#confianca">CONFIANÇA</a>
+			        	<a href="#" class="btn botao-red mx-lg-5" style="z-index: 999999;" data-toggle="modal" data-target="#fortaleza">FORTALEZA</a>
+			        </center>
+			        <center>
+			        	<a href="#" class="btn botao-blackB mr-4 mt-2" style="border: 3px solid rgba(169, 168, 168, 0.8);box-shadow: #0f1643 0px 0px 12px inset, #aba9a9b0 0px 0px 12px;" data-toggle="modal" data-target="#consolo">CONSOLO</a>
+			        </center>
+			        <center>
+			        	<a href="#" class="btn botao-blackB ml-3 mt-2" data-toggle="modal" data-target="#angustia">ANGÚSTIA</a>
+			        	<a href="#" class="btn botao-blackB ml-3 mt-2" data-toggle="modal" data-target="#doenca">DOENÇA</a>
+			        </center>
+			        <center>
+			        	<a href="#" class="btn botao-blackB ml-3 mt-2" data-toggle="modal" data-target="#perigo">PERIGO</a>
+			        </center>
+			      </div>
+			      
+			    </div>
+
+			    <!-- setas da  direita esquerada-->
+			    <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="width: 30px;">
+			      <span class="glyphicon glyphicon-chevron-left"></span>
+			      <span class="sr-only">Previous</span>
+			    </a>
+			    <a class="right carousel-control" href="#myCarousel" data-slide="next" style="width: 30px;">
+			      <span class="glyphicon glyphicon-chevron-right"></span>
+			      <span class="sr-only">Next</span>
+			    </a>
+			  </div>
+        </div>
+         <div class="creditos-icones">
+          <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 Textomobile" style="padding-top: 20px;">
+                        <p style="text-shadow: 2px 2px 9px #000000;font-size: 10px;">
+                            © Criado com amor para Deus ❤ • <a rel="nofollow" style="color: #00b8c1; " href="#" class="sublinhado">Feito por: Alguém</a>
+                        </p>
+                    </div>
+                  </div>
+                </div>
+         </div>
+       <canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1280" height="698"></canvas></div>
+
+    <div class="modal fade" id="doacao" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 99999;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="blog-card spring-fever">
+              <div class="fechar-card"><a href="#" class="link"><img src="m_index_arquivos/close.svg" alt="Fechar" class="close" data-dismiss="modal" aria-label="Fechar"></a></div>
+                <div class="title-content text-white" style="padding-top: 40%;">
+                  <p>Esta é uma plataforma sem fins lucrativos, mas para
+ seu funcionamento, é necessário uma verba. Caso sinta vontade de 
+contribuir a Semear, doe qualquer valor na opção doação.</p>
+                  <a href="#" class="btn botao-doacao">DOAÇÃO</a>
+                </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="informacao" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 99999;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="blog-card spring-fever">
+              <div class="fechar-card"><a href="#" class="link"><img src="m_index_arquivos/close.svg" alt="Fechar" class="close" data-dismiss="modal" aria-label="Fechar"></a></div>
+                <div class="title-content text-white" style="padding-top: 40%;">
+                	O Projeto Semear é uma plataforma de conhecimento 
+bíblico, criado para pessoas que buscam soluções para seus problemas.
+                </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="salvacao" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 99999;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="blog-card spring-fever">
+              <div class="fechar-card"><a href="#" class="link"><img src="m_index_arquivos/close.svg" alt="Fechar" class="close" data-dismiss="modal" aria-label="Fechar"></a></div>
+                <div class="title-content">
+                  <h3>SALVAÇÃO</h3>
+                  <hr>
+                  <div class="intro">Versículos - Salvação</div>
+                </div><!-- /.title-content -->
+                <div class="card-info">
+                  <div class="intro">Lucas 19:10</div>
+                  "Pois o Filho do homem veio buscar e salvar o que estava perdido." 
+                </div>
+                <div class="card-info">
+                  <div class="intro">Romanos 10:9</div>
+                  "Se você confessar com a sua boca que Jesus é Senhor e
+ crer em seu coração que Deus o ressuscitou dentre os mortos, será 
+salvo." 
+                </div>
+                <div class="card-info">
+                  <div class="intro">João 5:24</div>
+                  "Eu asseguro: Quem ouve a minha palavra e crê naquele 
+que me enviou tem a vida eterna e não será condenado, mas já passou da 
+morte para a vida."  
+                </div><!-- /.card-info -->
+                <div class="utility-info">
+                  <ul class="utility-list">
+                  <li class="date">00.00.0000</li>
+                  </ul>
+                </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="prosperidade" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 99999;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="blog-card spring-fever">
+              <div class="fechar-card"><a href="#" class="link"><img src="m_index_arquivos/close.svg" alt="Fechar" class="close" data-dismiss="modal" aria-label="Fechar"></a></div>
+                <div class="title-content">
+                  <h3>PROSPERIDADE</h3>
+                  <hr>
+                  <div class="intro">Versículos - Prosperidade</div>
+                </div><!-- /.title-content -->
+                <div class="card-info">
+                  <div class="intro">Eclesiastes 5:19</div>
+                  "E, quando Deus concede riquezas e bens a alguém e o 
+capacita a desfrutá-los, a aceitar a sua sorte e a ser feliz em seu 
+trabalho, isso é um presente de Deus."" 
+                </div>
+                <div class="card-info">
+                  <div class="intro">Provérbios 28:25</div>
+                  "O ganancioso provoca brigas, mas quem confia no Senhor prosperará." 
+                </div>
+                <div class="card-info">
+                  <div class="intro">Jeremias 29:11</div>
+                  "Porque sou eu que conheço os planos que tenho para 
+vocês', diz o Senhor, 'planos de fazê-los prosperar e não de causar 
+dano, planos de dar a vocês esperança e um futuro."  
+                </div><!-- /.card-info -->
+                <div class="utility-info">
+                  <ul class="utility-list">
+                  <li class="date">00.00.0000</li>
+                  </ul>
+                </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="amor" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 99999;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="blog-card spring-fever">
+              <div class="fechar-card"><a href="#" class="link"><img src="m_index_arquivos/close.svg" alt="Fechar" class="close" data-dismiss="modal" aria-label="Fechar"></a></div>
+                <div class="title-content">
+                  <h3>AMOR</h3>
+                  <hr>
+                  <div class="intro">Versículos - Amor</div>
+                </div><!-- /.title-content -->
+                <div class="card-info">
+                  <div class="intro">1 João 3:11</div>
+                  "Esta é a mensagem que vocês ouviram desde o princípio: que nos amemos uns aos outros." 
+                </div>
+                <div class="card-info">
+                  <div class="intro">Romanos 12:9-10</div>
+                  "O amor deve ser sincero. Odeiem o que é mau; 
+apeguem-se ao que é bom. Dediquem-se uns aos outros com amor fraternal. 
+Prefiram dar honra aos outros mais do que a vocês." 
+                </div>
+                <div class="card-info">
+                  <div class="intro">Mateus 5:44</div>
+                  "Mas eu digo: Amem os seus inimigos e orem por aqueles que os perseguem."  
+                </div><!-- /.card-info -->
+                <div class="utility-info">
+                  <ul class="utility-list">
+                  <li class="date">00.00.0000</li>
+                  </ul>
+                </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="vidaAbundante" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 99999;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="blog-card spring-fever">
+              <div class="fechar-card"><a href="#" class="link"><img src="m_index_arquivos/close.svg" alt="Fechar" class="close" data-dismiss="modal" aria-label="Fechar"></a></div>
+                <div class="title-content">
+                  <h3>VIDA ABUNDANTE</h3>
+                  <hr>
+                  <div class="intro">Versículos - Vida Abundante</div>
+                </div><!-- /.title-content -->
+                <div class="card-info">
+                  <div class="intro">João 10:10</div>
+                  "O ladrão vem apenas para roubar, matar e destruir; eu vim para que tenham vida e a tenham em abundância." 
+                </div>
+                <div class="card-info">
+                  <div class="intro">2 Pedro 1:2</div>
+                  "Graça e paz lhes sejam multiplicadas, pelo pleno conhecimento de Deus e de Jesus, o nosso Senhor." 
+                </div>
+                <div class="card-info">
+                  <div class="intro">Mateus 6:33</div>
+                  "Busquem, pois, em primeiro lugar o Reino de Deus e a 
+sua justiça, e todas essas coisas serão acrescentadas a vocês."  
+                </div><!-- /.card-info -->
+                <div class="utility-info">
+                  <ul class="utility-list">
+                  <li class="date">00.00.0000</li>
+                  </ul>
+                </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="vidaEterna" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 99999;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="blog-card spring-fever">
+              <div class="fechar-card"><a href="#" class="link"><img src="m_index_arquivos/close.svg" alt="Fechar" class="close" data-dismiss="modal" aria-label="Fechar"></a></div>
+                <div class="title-content">
+                  <h3>VIDA ETERNA</h3>
+                  <hr>
+                  <div class="intro">Versículos - Vida Eterna</div>
+                </div><!-- /.title-content -->
+                <div class="card-info">
+                  <div class="intro">João 3:16</div>
+                  "Porque Deus tanto amou o mundo que deu o seu Filho 
+Unigênito, para que todo o que nele crer não pereça, mas tenha a vida 
+eterna." 
+                </div>
+                <div class="card-info">
+                  <div class="intro">Romanos 6:23</div>
+                  "Pois o salário do pecado é a morte, mas o dom 
+gratuito de Deus é a vida eterna em Cristo Jesus, nosso Senhor." 
+                </div>
+                <div class="card-info">
+                  <div class="intro">Romanos 2:7</div>
+                  "Ele dará vida eterna aos que, persistindo em fazer o bem, buscam glória, honra e imortalidade."  
+                </div><!-- /.card-info -->
+                <div class="utility-info">
+                  <ul class="utility-list">
+                  <li class="date">00.00.0000</li>
+                  </ul>
+                </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="gloria" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 99999;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="blog-card spring-fever">
+              <div class="fechar-card"><a href="#" class="link"><img src="m_index_arquivos/close.svg" alt="Fechar" class="close" data-dismiss="modal" aria-label="Fechar"></a></div>
+                <div class="title-content">
+                  <h3>GLÓRIA</h3>
+                  <hr>
+                  <div class="intro">Versículos - Glória</div>
+                </div><!-- /.title-content -->
+                <div class="card-info">
+                  <div class="intro">1 Coríntios 10:31</div>
+                  "Assim, quer vocês comam, quer bebam, quer façam qualquer outra coisa, façam tudo para a glória de Deus." 
+                </div>
+                <div class="card-info">
+                  <div class="intro">Deuteronômio 5:24</div>
+                  "E vocês disseram: 'O Senhor, o nosso Deus, 
+mostrou-nos sua glória e sua majestade, e nós ouvimos a sua voz vinda de
+ dentro do fogo. Hoje vimos que Deus fala com o homem e que este ainda 
+continua vivo!" 
+                </div>
+                <div class="card-info">
+                  <div class="intro">1 Crônicas 29:13</div>
+                  "Agora, nosso Deus, damos-te graças, e louvamos o teu glorioso nome."  
+                </div><!-- /.card-info -->
+                <div class="utility-info">
+                  <ul class="utility-list">
+                  <li class="date">00.00.0000</li>
+                  </ul>
+                </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="felicidade" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 99999;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="blog-card spring-fever">
+              <div class="fechar-card"><a href="#" class="link"><img src="m_index_arquivos/close.svg" alt="Fechar" class="close" data-dismiss="modal" aria-label="Fechar"></a></div>
+                <div class="title-content">
+                  <h3>FELICIDADE</h3>
+                  <hr>
+                  <div class="intro">Versículos - Felicidade</div>
+                </div><!-- /.title-content -->
+                <div class="card-info">
+                  <div class="intro">Salmos 34:8</div>
+                  "Provem e vejam como o Senhor é bom. Como é feliz o homem que nele se refugia!" 
+                </div>
+                <div class="card-info">
+                  <div class="intro">Eclesiastes 3:12</div>
+                  "Descobri que não há nada melhor para o homem do que ser feliz e praticar o bem enquan­to vive." 
+                </div>
+                <div class="card-info">
+                  <div class="intro">Provérbios 16:20</div>
+                  "Quem examina cada questão com cuidado prospera, e feliz é aquele que confia no Senhor."  
+                </div><!-- /.card-info -->
+                <div class="utility-info">
+                  <ul class="utility-list">
+                  <li class="date">00.00.0000</li>
+                  </ul>
+                </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="fortaleza" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 99999;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="blog-card spring-fever">
+              <div class="fechar-card"><a href="#" class="link"><img src="m_index_arquivos/close.svg" alt="Fechar" class="close" data-dismiss="modal" aria-label="Fechar"></a></div>
+                <div class="title-content">
+                  <h3>FORTALEZA</h3>
+                  <hr>
+                  <div class="intro">Versículos - Fortaleza</div>
+                </div><!-- /.title-content -->
+                <div class="card-info">
+                  <div class="intro">Salmos 46:1</div>
+                  "Deus é o nosso refúgio e a nossa fortaleza, auxílio sempre presente na adversidade." 
+                </div>
+                <div class="card-info">
+                  <div class="intro">Provérbios 14:26</div>
+                  "Aquele que teme o Senhor possui uma fortaleza segura, refúgio para os seus filhos." 
+                </div>
+                <div class="card-info">
+                  <div class="intro">Salmos 91:1-2</div>
+                  "Aquele que habita no abrigo do Altíssimo e descansa à
+ sombra do Todo-poderoso pode dizer ao Senhor: "Tu és o meu refúgio e a 
+minha fortaleza, o meu Deus, em quem confio." 
+                </div><!-- /.card-info -->
+                <div class="utility-info">
+                  <ul class="utility-list">
+                  <li class="date">00.00.0000</li>
+                  </ul>
+                </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="confianca" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 99999;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="blog-card spring-fever">
+              <div class="fechar-card"><a href="#" class="link"><img src="m_index_arquivos/close.svg" alt="Fechar" class="close" data-dismiss="modal" aria-label="Fechar"></a></div>
+                <div class="title-content">
+                  <h3>CONFIANÇA</h3>
+                  <hr>
+                  <div class="intro">Versículos - Confiança</div>
+                </div><!-- /.title-content -->
+                <div class="card-info">
+                  <div class="intro">1 João 5:14</div>
+                  "Esta é a confiança que temos ao nos aproximarmos de 
+Deus: se pedirmos alguma coisa de acordo com a vontade de Deus, ele nos 
+ouvirá." 
+                </div>
+                <div class="card-info">
+                  <div class="intro">Lucas 18:27</div>
+                  "Jesus respondeu: O que é impossível para os homens é possível para Deus." 
+                </div>
+                <div class="card-info">
+                  <div class="intro">Marcos 9:23</div>
+                  " "Se podes?", disse Jesus: Tudo é possível àquele que crê." 
+                </div><!-- /.card-info -->
+                <div class="utility-info">
+                  <ul class="utility-list">
+                  <li class="date">00.00.0000</li>
+                  </ul>
+                </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="bencao" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 99999;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="blog-card spring-fever">
+              <div class="fechar-card"><a href="#" class="link"><img src="m_index_arquivos/close.svg" alt="Fechar" class="close" data-dismiss="modal" aria-label="Fechar"></a></div>
+                <div class="title-content">
+                  <h3>BENÇÃO</h3>
+                  <hr>
+                  <div class="intro">Versículos - Benção</div>
+                </div><!-- /.title-content -->
+                <div class="card-info">
+                  <div class="intro">Números 6:24-26</div>
+                  "O Senhor te abençoe e te guarde; o Senhor faça 
+resplandecer o seu rosto sobre ti e te conceda graça; o Senhor volte 
+para ti o seu rosto e te dê paz. " 
+                </div>
+                <div class="card-info">
+                  <div class="intro">Provérbios 16:3</div>
+                  "Consagre ao Senhor tudo o que você faz, e os seus planos serão bem-sucedidos." 
+                </div>
+                <div class="card-info">
+                  <div class="intro">Marcos 9:23</div>
+                  "Pres­tem culto ao Senhor, o Deus de vocês, e ele os 
+aben­çoará, dando a vocês alimento e água. Tirarei a doença do meio de 
+vocês." 
+                </div><!-- /.card-info -->
+                <div class="utility-info">
+                  <ul class="utility-list">
+                  <li class="date">00.00.0000</li>
+                  </ul>
+                </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="alegria" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 99999;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="blog-card spring-fever">
+              <div class="fechar-card"><a href="#" class="link"><img src="m_index_arquivos/close.svg" alt="Fechar" class="close" data-dismiss="modal" aria-label="Fechar"></a></div>
+                <div class="title-content">
+                  <h3>ALEGRIA</h3>
+                  <hr>
+                  <div class="intro">Versículos - Alegria</div>
+                </div><!-- /.title-content -->
+                <div class="card-info">
+                  <div class="intro">Provérbios 10:28</div>
+                  "O que o justo almeja redunda em alegria, mas as esperanças dos ímpios dão em nada." 
+                </div>
+                <div class="card-info">
+                  <div class="intro">Tiago 1:2-3</div>
+                  "Meus irmãos, considerem motivo de grande alegria o 
+fato de passarem por diversas provações, pois vocês sabem que a prova da
+ sua fé produz perseverança." 
+                </div>
+                <div class="card-info">
+                  <div class="intro">Eclesiastes 9:7</div>
+                  "Portanto, vá, coma com prazer a sua comi­da e beba o 
+seu vinho de coração alegre, pois Deus já se agradou do que você faz." 
+                </div><!-- /.card-info -->
+                <div class="utility-info">
+                  <ul class="utility-list">
+                  <li class="date">00.00.0000</li>
+                  </ul>
+                </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="espiritoSanto" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 99999;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="blog-card spring-fever">
+              <div class="fechar-card"><a href="#" class="link"><img src="m_index_arquivos/close.svg" alt="Fechar" class="close" data-dismiss="modal" aria-label="Fechar"></a></div>
+                <div class="title-content">
+                  <h3>ESPÍRITO SANTO</h3>
+                  <hr>
+                  <div class="intro">Versículos - Espírito Santo</div>
+                </div><!-- /.title-content -->
+                <div class="card-info">
+                  <div class="intro">Efésios 5:18</div>
+                  "Mas o fruto do Espírito é amor, alegria, paz, paciência, amabilidade, bondade, fidelidade."
+                </div>
+                <div class="card-info">
+                  <div class="intro">Atos dos Apóstolos 2:38</div>
+                 "Pedro respondeu: "Arrependam-se, e cada um de vocês 
+seja batizado em nome de Jesus Cristo para perdão dos seus pecados, e 
+receberão o dom do Espírito Santo."
+                </div>
+                <div class="card-info">
+                  <div class="intro">João 5:24</div>
+                  "Eu asseguro: Quem ouve a minha palavra e crê naquele 
+que me enviou tem a vida eterna e não será condenado, mas já passou da 
+morte para a vida." 
+                </div><!-- /.card-info -->
+                <div class="utility-info">
+                  <ul class="utility-list">
+                  <li class="date">00.00.0000</li>
+                  </ul>
+                </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="esperanca" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 99999;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="blog-card spring-fever">
+              <div class="fechar-card"><a href="#" class="link"><img src="m_index_arquivos/close.svg" alt="Fechar" class="close" data-dismiss="modal" aria-label="Fechar"></a></div>
+                <div class="title-content">
+                  <h3>ESPERANÇA</h3>
+                  <hr>
+                  <div class="intro">Versículos - Esperança</div>
+                </div><!-- /.title-content -->
+                <div class="card-info">
+                  <div class="intro">Salmos 146:5</div>
+                  "Como é feliz aquele cujo auxílio é o Deus de Jacó, cuja esperança está no Senhor, no seu Deus."
+                </div>
+                <div class="card-info">
+                  <div class="intro">Tito 3:7</div>
+                 "Ele o fez a fim de que, justificados por sua graça, 
+nos tornemos seus herdeiros, tendo a esperança da vida eterna."
+                </div>
+                <div class="card-info">
+                  <div class="intro">Romanos 12:12</div>
+                  "Alegrem-se na esperança, sejam pacientes na tribulação, perseverem na oração." 
+                </div><!-- /.card-info -->
+                <div class="utility-info">
+                  <ul class="utility-list">
+                  <li class="date">00.00.0000</li>
+                  </ul>
+                </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="cura" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 99999;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="blog-card spring-fever">
+              <div class="fechar-card"><a href="#" class="link"><img src="m_index_arquivos/close.svg" alt="Fechar" class="close" data-dismiss="modal" aria-label="Fechar"></a></div>
+                <div class="title-content">
+                  <h3>CURA</h3>
+                  <hr>
+                  <div class="intro">Versículos - Cura</div>
+                </div><!-- /.title-content -->
+                <div class="card-info">
+                  <div class="intro">Salmos 107:20</div>
+                  "Ele enviou a sua palavra e os curou, e os livrou da morte. "
+                </div>
+                <div class="card-info">
+                  <div class="intro">Jeremias 17:14</div>
+                 "Cura-me, Senhor, e serei curado; salva-me, e serei salvo, pois tu és aquele a quem eu louvo."
+                </div>
+                <div class="card-info">
+                  <div class="intro">Salmos 30:2</div>
+                  "Senhor meu Deus, a ti clamei por socorro, e tu me curaste. " 
+                </div><!-- /.card-info -->
+                <div class="utility-info">
+                  <ul class="utility-list">
+                  <li class="date">00.00.0000</li>
+                  </ul>
+                </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="fe" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 99999;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="blog-card spring-fever">
+              <div class="fechar-card"><a href="#" class="link"><img src="m_index_arquivos/close.svg" alt="Fechar" class="close" data-dismiss="modal" aria-label="Fechar"></a></div>
+                <div class="title-content">
+                  <h3>FÉ</h3>
+                  <hr>
+                  <div class="intro">Versículos - Fé</div>
+                </div><!-- /.title-content -->
+                <div class="card-info">
+                  <div class="intro">Romanos 10:17</div>
+                  "Consequentemente, a fé vem por se ouvir a mensagem, e a mensagem é ouvida mediante a palavra de Cristo."
+                </div>
+                <div class="card-info">
+                  <div class="intro">Hebreus 11:6</div>
+                 "Sem fé é impossível agradar a Deus, pois quem dele se 
+aproxima precisa crer que ele existe e que recompensa aqueles que o 
+buscam."
+                </div>
+                <div class="card-info">
+                  <div class="intro">Hebreus 11:1</div>
+                  "Ora, a fé é a certeza daquilo que esperamos e a prova das coisas que não vemos." 
+                </div><!-- /.card-info -->
+                <div class="utility-info">
+                  <ul class="utility-list">
+                  <li class="date">00.00.0000</li>
+                  </ul>
+                </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="direcao" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 99999;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="blog-card spring-fever">
+              <div class="fechar-card"><a href="#" class="link"><img src="m_index_arquivos/close.svg" alt="Fechar" class="close" data-dismiss="modal" aria-label="Fechar"></a></div>
+                <div class="title-content">
+                  <h3>DIREÇÃO</h3>
+                  <hr>
+                  <div class="intro">Versículos - Direção</div>
+                </div><!-- /.title-content -->
+                <div class="card-info">
+                  <div class="intro">João 14:6</div>
+                  "Respondeu Jesus: "Eu sou o caminho, a verdade e a vida. Ninguém vem ao Pai, a não ser por mim."
+                </div>
+                <div class="card-info">
+                  <div class="intro">Salmos 119:105</div>
+                 "A tua palavra é lâmpada que ilumina os meus passos e luz que clareia o meu caminho."
+                </div>
+                <div class="card-info">
+                  <div class="intro">Provérbios 16:9</div>
+                  "Em seu coração o homem planeja o seu caminho, mas o Senhor determina os seus passos." 
+                </div><!-- /.card-info -->
+                <div class="utility-info">
+                  <ul class="utility-list">
+                  <li class="date">00.00.0000</li>
+                  </ul>
+                </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="amizade" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 99999;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="blog-card spring-fever">
+              <div class="fechar-card"><a href="#" class="link"><img src="m_index_arquivos/close.svg" alt="Fechar" class="close" data-dismiss="modal" aria-label="Fechar"></a></div>
+                <div class="title-content">
+                  <h3>AMIZADE</h3>
+                  <hr>
+                  <div class="intro">Versículos - Amizade</div>
+                </div><!-- /.title-content -->
+                <div class="card-info">
+                  <div class="intro">Provérbios 17:17</div>
+                  "O amigo ama em todos os momentos; é um irmão na adversidade."
+                </div>
+                <div class="card-info">
+                  <div class="intro">Provérbios 13:20</div>
+                 "Aquele que anda com os sábios será cada vez mais sábio, mas o companheiro dos tolos acabará mal."
+                </div>
+                <div class="card-info">
+                  <div class="intro">João 15:15</div>
+                  "Já não os chamo servos, porque o servo não sabe o que
+ o seu senhor faz. Em vez disso, eu os tenho chamado amigos, porque tudo
+ o que ouvi de meu Pai eu tornei conhecido a vocês." 
+                </div><!-- /.card-info -->
+                <div class="utility-info">
+                  <ul class="utility-list">
+                  <li class="date">00.00.0000</li>
+                  </ul>
+                </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="disciplina" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 99999;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="blog-card spring-fever">
+              <div class="fechar-card"><a href="#" class="link"><img src="m_index_arquivos/close.svg" alt="Fechar" class="close" data-dismiss="modal" aria-label="Fechar"></a></div>
+                <div class="title-content">
+                  <h3>DISCIPLINA</h3>
+                  <hr>
+                  <div class="intro">Versículos - Disciplina</div>
+                </div><!-- /.title-content -->
+                <div class="card-info">
+                  <div class="intro">Deuteronômio 8:5</div>
+                  "Saibam, pois, em seu coração que, assim como um homem
+ disciplina o seu filho, da mesma forma o Senhor, o seu Deus, os 
+disciplina."
+                </div>
+                <div class="card-info">
+                  <div class="intro">Provérbios 23:12</div>
+                  "Dedique à disciplina o seu coração e os seus ouvidos às palavras que dão conhecimento."
+                </div>
+                <div class="card-info">
+                  <div class="intro">Provérbios 3:11-12</div>
+                 "Meu filho, não despreze a disciplina do Senhor nem se 
+magoe com a sua repreensão, pois o Senhor disciplina a quem ama, assim 
+como o pai faz ao filho de quem deseja o bem."
+                </div><!-- /.card-info -->
+                <div class="utility-info">
+                  <ul class="utility-list">
+                  <li class="date">00.00.0000</li>
+                  </ul>
+                </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="exaltacao" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 99999;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="blog-card spring-fever">
+              <div class="fechar-card"><a href="#" class="link"><img src="m_index_arquivos/close.svg" alt="Fechar" class="close" data-dismiss="modal" aria-label="Fechar"></a></div>
+                <div class="title-content">
+                  <h3>EXALTAÇÃO</h3>
+                  <hr>
+                  <div class="intro">Versículos - Exaltação</div>
+                </div><!-- /.title-content -->
+                <div class="card-info">
+                  <div class="intro">Salmos 117:1-2</div>
+                  "Louvem o Senhor, todas as nações; exaltem-no, todos 
+os povos! Porque imenso é o seu amor leal por nós, e a fidelidade do 
+Senhor dura para sempre. Aleluia!"
+                </div>
+                <div class="card-info">
+                  <div class="intro">1 Crônicas 16:24</div>
+                  "Anunciem a sua glória entre as nações, seus feitos maravilhosos entre todos os povos!"
+                </div>
+                <div class="card-info">
+                  <div class="intro">Salmos 96:3</div>
+                 "Anunciem a sua glória entre as nações, seus feitos maravilhosos entre todos os povos!"
+                </div><!-- /.card-info -->
+                <div class="utility-info">
+                  <ul class="utility-list">
+                  <li class="date">00.00.0000</li>
+                  </ul>
+                </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="liberdade" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 99999;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="blog-card spring-fever">
+              <div class="fechar-card"><a href="#" class="link"><img src="m_index_arquivos/close.svg" alt="Fechar" class="close" data-dismiss="modal" aria-label="Fechar"></a></div>
+                <div class="title-content">
+                  <h3>LIBERDADE</h3>
+                  <hr>
+                <div class="intro">Versículos - Liberdade</div>
+                </div><!-- /.title-content -->
+                <div class="card-info">
+                  <div class="intro">Salmos 119:45</div>
+                  "Andarei em verdadeira liberdade, pois tenho buscado os teus preceitos."
+                </div>
+                <div class="card-info">
+                  <div class="intro">2 Coríntios 3:17</div>
+                 "Ora, o Senhor é o Espírito e onde está o Espírito do Senhor ali há liberdade."
+                </div>
+                <div class="card-info">
+                  <div class="intro">Gálatas 5:1</div>
+                  "Foi para a liberdade que Cristo nos libertou. 
+Portanto, permaneçam firmes e não se deixem submeter novamente a um jugo
+ de escravidão." 
+                </div><!-- /.card-info -->
+                <div class="utility-info">
+                  <ul class="utility-list">
+                  <li class="date">00.00.0000</li>
+                  </ul>
+                </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="jovens" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 99999;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="blog-card spring-fever">
+              <div class="fechar-card"><a href="#" class="link"><img src="m_index_arquivos/close.svg" alt="Fechar" class="close" data-dismiss="modal" aria-label="Fechar"></a></div>
+                <div class="title-content">
+                  <h3>JOVENS</h3>
+                  <hr>
+                  <div class="intro">Versículos - Jovens</div>
+                </div><!-- /.title-content -->
+                <div class="card-info">
+                  <div class="intro">Salmos 119:9</div>
+                  "Como pode o jovemmanter pura a sua conduta? Vivendo de acordo com a tua palavra."
+                </div>
+                <div class="card-info">
+                  <div class="intro">Efésios 6:1-24</div>
+                 "Filhos, obedeçam a seus pais no Senhor, pois isso é 
+justo. "Honra teu pai e tua mãe" - este é o primeiro mandamento com 
+promessa - "
+                </div>
+                <div class="card-info">
+                  <div class="intro">1 Pedro 5:5-6</div>
+                  "Da mesma forma, jovens, sujeitem-se aos mais velhos. 
+Sejam todos humildes uns para com os outros, porque "Deus se opõe aos 
+orgulhosos, mas concede graça aos humildes". Portanto, humilhem-se 
+debaixo da poderosa mão de Deus, para que ele os exalte no tempo 
+devido." 
+                </div><!-- /.card-info -->
+                <div class="utility-info">
+                  <ul class="utility-list">
+                  <li class="date">00.00.0000</li>
+                  </ul>
+                </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="oracao" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 99999;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="blog-card spring-fever">
+              <div class="fechar-card"><a href="#" class="link"><img src="m_index_arquivos/close.svg" alt="Fechar" class="close" data-dismiss="modal" aria-label="Fechar"></a></div>
+                <div class="title-content">
+                  <h3>ORAÇÃO</h3>
+                  <hr>
+                  <div class="intro">Versículos - Oração</div>
+                </div><!-- /.title-content -->
+                <div class="card-info">
+                  <div class="intro">Mateus 6:6</div>
+                  "Mas, quando você orar, vá para seu quarto, feche a 
+porta e ore a seu Pai, que está em secreto. Então seu Pai, que vê em 
+secreto, o recompensará."
+                </div>
+                <div class="card-info">
+                  <div class="intro">Mateus 21:22</div>
+                 "E tudo o que pedirem em oração, se crerem, vocês receberão."
+                </div>
+                <div class="card-info">
+                  <div class="intro">João 14:13-14</div>
+                  "E eu farei o que vocês pedirem em meu nome, para que o
+ Pai seja glorificado no Filho. O que vocês pedirem em meu nome, eu 
+farei. " 
+                </div><!-- /.card-info -->
+                <div class="utility-info">
+                  <ul class="utility-list">
+                  <li class="date">00.00.0000</li>
+                  </ul>
+                </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="obediencia" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 99999;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="blog-card spring-fever">
+              <div class="fechar-card"><a href="#" class="link"><img src="m_index_arquivos/close.svg" alt="Fechar" class="close" data-dismiss="modal" aria-label="Fechar"></a></div>
+                <div class="title-content">
+                  <h3>OBEDIÊNCIA</h3>
+                  <hr>
+                  <div class="intro">Versículos - Obediência</div>
+                </div><!-- /.title-content -->
+                <div class="card-info">
+                  <div class="intro">Deuteronômio 5:29</div>
+                  "Quem dera eles tivessem sempre no coração esta 
+disposição para temer-me e para obedecer a todos os meus mandamentos. 
+Assim tudo iria bem com eles e com seus descendentes para sempre!"
+                </div>
+                <div class="card-info">
+                  <div class="intro">João 14:15</div>
+                 "Se vocês me amam, obedecerão aos meus mandamentos."
+                </div>
+                <div class="card-info">
+                  <div class="intro">Salmos 18:44</div>
+                  "Assim que me ouvem, me obedecem; são estrangeiros que se submetem a mim." 
+                </div><!-- /.card-info -->
+                <div class="utility-info">
+                  <ul class="utility-list">
+                  <li class="date">00.00.0000</li>
+                  </ul>
+                </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="paz" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 99999;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="blog-card spring-fever">
+              <div class="fechar-card"><a href="#" class="link"><img src="m_index_arquivos/close.svg" alt="Fechar" class="close" data-dismiss="modal" aria-label="Fechar"></a></div>
+                <div class="title-content">
+                  <h3>PAZ</h3>
+                  <hr>
+                  <div class="intro">Versículos - Paz</div>
+                </div><!-- /.title-content -->
+                <div class="card-info">
+                  <div class="intro">João 16:33</div>
+                  "Eu disse essas coisas para que em mim vocês tenham 
+paz. Neste mundo vocês terão aflições; contudo, tenham ânimo! Eu venci o
+ mundo."
+                </div>
+                <div class="card-info">
+                  <div class="intro">João 14:27</div>
+                 "Deixo a paz a vocês; a minha paz dou a vocês. Não a 
+dou como o mundo a dá. Não se perturbe o seu coração, nem tenham medo."
+                </div>
+                <div class="card-info">
+                  <div class="intro">Romanos 8:6</div>
+                  "A mentalidade da carne é morte, mas a mentalidade do Espírito é vida e paz." 
+                </div><!-- /.card-info -->
+                <div class="utility-info">
+                  <ul class="utility-list">
+                  <li class="date">00.00.0000</li>
+                  </ul>
+                </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="eis-meAqui" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 99999;">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="blog-card spring-fever">
+              <div class="fechar-card"><a href="#" class="link"><img src="m_index_arquivos/close.svg" alt="Fechar" class="close" data-dismiss="modal" aria-label="Fechar"></a></div>
+                <div class="title-content">
+                  <h3>EIS-ME AQUI</h3>
+                  <hr>
+                  <div class="intro">Livro 00:0-0</div>
+                </div><!-- /.title-content -->
+                <div class="card-info">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing 
+elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+ Ut enim ad minim. 
+                </div><!-- /.card-info -->
+                <div class="utility-info">
+                  <ul class="utility-list">
+                  <li class="equipe">Equipe Semear</li>
+                  </ul>
+                </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+<script src="m_index_arquivos/jquery-2.js"></script>
+<script type="text/javascript" src="m_index_arquivos/particles.js"></script>
+<script type="text/javascript" src="m_index_arquivos/app.js"></script>
+<script src="m_index_arquivos/jquery-3.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="m_index_arquivos/popper.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="m_index_arquivos/bootstrap_002.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+</body></html>
