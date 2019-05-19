@@ -4,10 +4,6 @@ body{
     font-size:16px
 }
 
-@font-face {
-    font-family: 'Caveat', cursive;
-    src: url(https://fonts.googleapis.com/css?family=Caveat&display=swap)
-}
 .r-10{
     transform:rotate(10deg)
 }
